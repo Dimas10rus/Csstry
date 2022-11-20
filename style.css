@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+/* импорт  шрифта по  ссылке */
+body {
+  /* правило к тегу боди */
+  background-color: rgb(255, 255, 255);
+  /* цыет к фону */
+  color: #0f141e;
+  font-size: 16px;
+
+  /* размер шрифта в боди
+} */
+  font-weight: normal;
+  /* жирность  шрифта */
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    шрифт */
+  font-family: "Roboto", sans-serif;
+  /* шрифт который загрузился по ссылке */
+  /* font: normal 16px "Roboto", sans-serif;
+  объеденить все настройки шрифта в одной команде */
+}
+a {
+  /* а - для всех ссылок стиль который ниже */
+  color: rgb(243, 26, 26);
+  text-decoration: none;
+}
+a:hover {
+  /* к объекту "а" используем селектор "наведение" выделяя егожелтым ыветом */
+  color: yellow;
+}
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 2px 3px 20px 0px rgb(0 0 0);
+  /* атрибуты класса аватар Бокс шадов - тень вокруг картинки */
+}
+.info p {
+  /* присвоили блоку инфо (div) ПАРАГРАФАМ "Р" стили ниже */
+  color: #86898f;
+  margin: 0;
+  /* отступ */
+  font-style: italic;
+  /* нкалонный стиль для блока ИНФО */
+  font-weight: 900;
+  /* толщина текста */
+  text-transform: capitalize;
+  /* каждое слово с большой буквы */
+  letter-spacing: 5px;
+  /* расстояние между буквами */
+}
+.info {
+  display: flex;
+  /* группировать данныев блоке */
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+  /* адаптиация к размеру окна (будет перепрыгивать тескт справа от  */
+  /* картинки вниз) */
+  .info {
+    text-align: center;
+    /* текст при меньше 700 пикселей будет по центру */
+    display: block;
+  }
+}
+.info-text {
+  margin-left: 40px;
+}
+.info-text h4 {
+  /* стиль для блока онфо-текст строчка h4 */
+  margin-bottom: 10px;
+}
+.list {
+  padding: 0 20px;
+}
+.list li {
+  /* стиль для ЛИ (таблицы) */
+  color: aquamarine;
+  margin-bottom: 10px;
+}
+.table {
+  width: 100%;
+  /* стиль для таблицы Тайбл расширить по всей области */
+}
+.table td {
+  /* между тегами td делай отступ ниже команда */
+  padding-bottom: 10px;
+}
+.table td:nth-child(1),
+.table td:nth-child(2) {
+  /* nth - селектор для стилизации одтельных столбцов
+    (через запятую 1-й и 2-й в данном случае цвет -
+   серый */
+  color: #86898f;
+}
+.link-list {
+  list-style: none;
+  padding: 10px;
+}
+.link-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid crimson;
+}
+.contact h2 {
+  text-align: center;
+  /* текст h2 в блоке center по центру */
+}
+.form-group label {
+  display: block;
+  /* поведение каждого из блоков (тут в ряд) */
+  font-size: 13px;
+  color: darkgray;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  /* по шиине родительского блока */
+
+  box-sizing: border-box;
+
+  border: none;
+  /* убрать базовую границу окон ввода */
+  background: transparent;
+  /* прозрачное поле ввода */
+  border-bottom: 1px solid darkgreen;
+  /* небольшая нижняя граница */
+  color: black;
+  /* цвет ввода текста */
+  padding: 15px 0 10px;
+  /* размер окна ввода */
+  outline: none;
+  /* отключитьграницу ввода */
+  font-family: inherit;
+  /* шрифт выбрать ьобщий */
+}
+.row {
+  display: flex;
+  /* рамзмещение двух импутов на одной строчке */
+  margin-bottom: 20px;
+  /* отступ до текстового поля */
+}
+.row > .form-group {
+  /* чтобы болки занимали всю ширину, т.е. ширина группы 50 % от Форм групп */
+  width: 50%;
+  margin-right: 20px;
+}
+.row > .form-group:first-child {
+  margin-right: 20px;
+}
+.container {
+  /* Div для всей страницы (блок) */
+  max-width: 750px;
+  /* адаптвная ширина (мах 750 пикселей) */
+  margin: auto;
+
+  /* контент  по середине страницы */
+  padding-top: 30px;
+  /* отступ сверху */
+}
+.btn {
+  background: #0f141e;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+
+  /* изменение курсора */
+}
+.btn:hover {
+  opacity: 0.9;
+  /* кнопка меняец цвет при наведении */
+}
+
+/* .social { */
+/* background-color: bisque; */
+/* padding: 15px; */
+/* отступ от блока */
+/* padding: 15px 40px; */
+/* отступ с разными растояниями по краям и сверху/снизу */
+/* border: 5px solid red; */
+/* рамка вокрук падинга солид - прямая линия */
+/* margin: 20px; */
+/* отступ от рамки */
+/* border-bottom-style: solid; */
+/* оформление низа рамки */
+/* border-right-color: blue; */
+/* } */
+/* .box-model > div {
+  применяем стили к ДИВами которы дочерние (ниже по иерархии) (кнопка >)
+  background: #0f141e;
+  height: 200px;
+  размерность
+  width: 25%;
+  ширина
+  float: left;
+  распологать вертиикально блоки
+  border: 4px solid red;
+  box-sizing: border-box;
+  оптимизирует размер блоков по ширине страницы
+} */
+.bg-ye {
+  background: #e0c642;
+}
+.bg-green {
+  background: #86898f;
+}
+.bg-red {
+  background: #1e62eb;
+}
+.card {
+  padding: 15px 20px;
+
+  margin-bottom: 20px;
+  border-radius: 20px;
+  /* общий блок где есть присвоение кард */
+}
+/* .position {
+  position: relative;
+  border: 4px;
+  background-color: #1e62eb;
+  padding: 20px;
+  height: 300px;
+}
+.box {
+  position: fixed;
+  /* фиксированный при скроллинге квадрат */
+/* top: 50px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+} */
